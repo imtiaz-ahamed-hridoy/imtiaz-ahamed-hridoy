@@ -9,7 +9,7 @@
   <a href="https://imtiaz-ahamed-hridoy.github.io"><img src="https://img.shields.io/badge/🌐_Live_Web_Resume-imtiaz--ahamed--hridoy.github.io-0284c7?style=for-the-badge" alt="Live Resume"/></a>
   <a href="https://linkedin.com/in/imtiaz-ahamed-hridoy"><img src="https://img.shields.io/badge/💼_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:imtiazahmed6265@gmail.com"><img src="https://img.shields.io/badge/✉️_Email-imtiazahmed6265@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="tel:+8801767536265"><img src="https://img.shields.io/badge/📞_Phone-+880_1767--536265-22c55e?style=for-the-badge" alt="Phone"/></a>
+  <a href="tel:+8801767536265"><img src="https://img.shields.io/badge/📞_Phone-+8801767536265-22c55e?style=for-the-badge" alt="Phone"/></a>
 </p>
 
 📍 **Dhaka, Bangladesh** &nbsp;|&nbsp; ⚡ **Available Immediately** &nbsp;|&nbsp; 🚀 **Open to Remote & On-Site Roles**
@@ -178,7 +178,7 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 
 [![Email](https://img.shields.io/badge/📧_Email-imtiazahmed6265@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:imtiazahmed6265@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/imtiaz-ahamed-hridoy)
-[![WhatsApp/Call](https://img.shields.io/badge/📞_Call_+880_1767--536265-22c55e?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+8801767536265)
+[![WhatsApp/Call](https://img.shields.io/badge/📞_Call_+8801767536265-22c55e?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+8801767536265)
 [![Live Resume](https://img.shields.io/badge/🌐_Interactive_Resume-View_Online-0284c7?style=for-the-badge)](https://imtiaz-ahamed-hridoy.github.io)
 
 **⚡ Response Time:** < 2 Hours &nbsp;|&nbsp; 🚀 **Available for Immediate Hire (Full-Time / Contract / Remote)**
