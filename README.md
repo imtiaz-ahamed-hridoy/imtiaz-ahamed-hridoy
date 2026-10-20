@@ -65,7 +65,7 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 - **SaaS API & Subscription Billing:** Built the full production backend REST API (84 endpoints) and administrative portal, integrating Paddle Billing v2 with Ed25519 cryptographic webhook validation across a three-tiered recurring subscription architecture.
 - **Automated Lifecycle & Monetization:** Engineered the automated Founder Programme engine managing 30-day trial clocks, scheduled day-25 expiry notifications, promotional conversion offers, and automated cron subscription state transitions.
 - **Testing & Quality Assurance:** Implemented a comprehensive automated test suite (unit, feature, and integration tests) maintaining a **100% pass rate** across authentication, subscription billing, and webhook idempotency to prevent regressions.
-- **Performance & Media Streaming:** Optimized curriculum audio streaming endpoints to achieve **under 180ms p95 API response latency** and **35ms database query latency**; integrated mobile payment workflows with the cross-platform Flutter client (AI-assisted development).
+- **Performance & Media Streaming:** Optimized curriculum audio streaming endpoints to achieve **under 180ms p95 API response latency** and **35ms database query latency**; integrated mobile payment workflows with the cross-platform Flutter client.
 
 ---
 
@@ -128,7 +128,7 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 ![Anthropic Claude](https://img.shields.io/badge/Anthropic_Claude_Sonnet-D97706?style=for-the-badge&logo=anthropic&logoColor=white)
 ![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white)
 
-- **Generative Media:** Multi-Provider LLM Abstraction Layer, Kling AI API (Motion Control), ElevenLabs API (Voice Cloning), Prompt Engineering, AI-Assisted Development (Antigravity, Gemini).
+- **AI & Automation:** Multi-Provider LLM Abstraction Layer, Kling AI API (Motion Control), ElevenLabs API (Voice Cloning), Prompt Engineering, AI Automation (n8n, GoHighLevel), AI-Assisted Development (Antigravity, Claude Code, Codex, Gemini).
 
 ### ☁️ Cloud, DevOps & Full-Stack
 ![AWS](https://img.shields.io/badge/AWS_EC2_/_S3-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
@@ -138,7 +138,7 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 
 - **DevOps:** Hostinger (VPS & Web), SiteGround, CloudPanel, cPanel, Linux VPS, Cron Scheduling, Git, Postman, PestPHP, PHPUnit.
 - **Frontend & Full-Stack:** Blade, Inertia.js, React, Livewire, Alpine.js, Tailwind CSS, Bootstrap, TypeScript, Vite.
-- **Mobile:** Flutter (mobile UI, API integration, in-app payment flows, AI-assisted development).
+- **Mobile:** Flutter (mobile UI, API integration, and in-app payment flows).
 
 ---
 
