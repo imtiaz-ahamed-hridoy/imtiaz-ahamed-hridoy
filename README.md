@@ -51,10 +51,10 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 > **Production URL:** [thingstodolists.com](https://thingstodolists.com) &nbsp;|&nbsp; **Admin:** [admin.thingstodolists.com](https://admin.thingstodolists.com) &nbsp;|&nbsp; **Repo:** [ThingsToDoLists](https://github.com/imtiaz-ahamed-hridoy/ThingsToDoLists)  
 > *High-scale OTA aggregating multi-supplier catalogs with real-time booking & multi-currency checkout.*
 
-- **Architecture & Catalog Ingestion:** Architected modular API backend using Data Transfer Objects, Normalizers, and Provider Factories to decouple external supplier feeds from core booking domain models.
-- **Supplier Normalization & Sync:** Engineered normalization pipelines reconciling divergent API payloads from GlobalTix and Bokun into unified models, eliminating sync memory crashes via chunked queue batching.
-- **Checkout Security & Webhooks:** Enforced cryptographic HMAC signature verification on supplier webhooks, row-level database locking during checkout, and automated rate limiting on public routes.
-- **Search Performance & Optimization:** Eliminated relational query loops during searches using eager loading, composite database indexes, and Redis caching, achieving **under 180ms p95 API response latency** and **35ms query latency**.
+- **Catalog Aggregation & Architecture:** Architected the complete travel marketplace backend in Laravel 12, normalizing external supplier catalogs (GlobalTix Asian ticketing, Bókun TripAdvisor global tours) across 55 database models and 148 API endpoints managing 1,000+ live attractions.
+- **Database & Latency Optimization:** Solved database full-table scan bottlenecks through Redis caching, composite indexing, and eager loading, reducing database roundtrips by 98% (201 to 3 queries) and achieving **35ms database query latency** and **under 180ms p95 API response latency**.
+- **Memory-Safe Queue Pipelines:** Engineered asynchronous background catalog synchronization using chunked queue jobs on an isolated Supervisor worker pool with distributed concurrency locks on DigitalOcean VPS, maintaining flat RAM consumption under 45MB.
+- **Financial Checkout & Security:** Engineered multi-currency checkout with automated daily exchange rate synchronization and dual-provider payments (Stripe, PayPal), enforcing cryptographic HMAC webhook validation and pessimistic database transactions to eliminate duplicate bookings.
 
 ---
 
@@ -73,10 +73,10 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 > **Production URL:** [sinozia.com](https://sinozia.com) &nbsp;|&nbsp; **Repo:** [Sinozia](https://github.com/imtiaz-ahamed-hridoy/Sinozia)  
 > *Generative AI platform transforming video characters with face swapping and cloned voiceovers.*
 
-- **Architecture & AI Abstraction:** Architected service-driven video processing backend using Strategy and Factory design patterns to decouple multi-provider AI integrations and asynchronous job pipelines.
-- **Multi-Provider Vision Engine:** Engineered dynamic provider abstraction layer allowing runtime switching between Google Gemini, OpenAI GPT, and Anthropic Claude, resolving character collision bugs via UUID validation.
-- **Credit Security & Concurrency:** Implemented token-based API authorization, database row locking on credit deductions to prevent concurrent overdraft race conditions, and prompt sanitization against injection.
-- **Pipeline Performance & Polling:** Offloaded compute-heavy video frame extraction and multi-stage rendering to background Redis queue workers, achieving **under 180ms p95 API response latency** and **35ms query latency**.
+- **7-Stage Pipeline Orchestration:** Architected the end-to-end video processing platform orchestrating a 7-stage automated queue pipeline: FFmpeg video frame extraction $\rightarrow$ LLM prompt synthesis $\rightarrow$ preview generation $\rightarrow$ Kling AI video rendering $\rightarrow$ ElevenLabs voice cloning $\rightarrow$ automated video assembly.
+- **Multi-Provider AI Abstraction:** Designed an enterprise AI vision abstraction layer using Strategy and Factory design patterns, enabling zero-code runtime provider switching between OpenAI GPT-4o, Google Gemini 2.5 Flash, and Anthropic Claude Sonnet via central configuration.
+- **Concurrency & Resource Management:** Engineered a user credit and billing management system utilizing atomic database transaction locking to eliminate balance race conditions, accompanied by asynchronous status polling workers with scheduler auto-recovery on Hostinger VPS.
+- **API Performance & Reliability:** Optimized API endpoints to maintain **under 180ms p95 response latency** and **35ms query execution times** during concurrent video generation task creation and media asset indexing.
 
 ---
 
@@ -84,10 +84,10 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 > **Production URL:** [lokaa.uk](https://lokaa.uk) &nbsp;|&nbsp; **API:** [api.lokaa.uk](https://api.lokaa.uk) &nbsp;|&nbsp; **Repo:** [Lokaa](https://github.com/imtiaz-ahamed-hridoy/Lokaa)  
 > *Two-sided on-demand local services marketplace connecting UK service providers with consumers.*
 
-- **Architecture & Service Layer:** Architected API-first modular backend using dedicated service classes, repository interfaces, form requests, and API resources to decouple business logic from HTTP presentation controllers.
-- **Real-Time WebSockets Engine:** Engineered real-time bidirectional chat messaging using Laravel Reverb WebSockets with authenticated presence channels, typing state broadcasts, and message policy authorization.
-- **Marketplace Security & Access:** Implemented token authentication via Laravel Sanctum, phone and email OTP verification, model ownership authorization policies, route rate limiting, and mass-assignment protection.
-- **Search Optimization & Infrastructure:** Tuned category filtering and location radius provider lookup queries with eager loading, composite indexing, and Redis caching, achieving **under 180ms p95 API response latency** and **35ms query latency**.
+- **Rapid 0-to-1 Architecture:** Designed and built the entire two-sided service marketplace from scratch in two weeks across 66 API routes (137 route definitions), featuring geolocation provider search, dynamic service listings, CMS, and OTP authentication.
+- **Real-Time Communication:** Implemented bidirectional real-time messaging and notifications between clients and service providers using Laravel Reverb WebSockets and Firebase Cloud Messaging (FCM).
+- **Database Indexing & Query Latency:** Optimized provider search and category filtering with composite indexing and query caching, achieving **35ms database query latency** and **sub-180ms p95 response times** across all marketplace endpoints.
+- **Production DevOps:** Configured and deployed the production infrastructure on Hostinger VPS (CloudPanel) with Nginx SSL, static asset caching, Supervisor background queue workers, and automated deployment scripts.
 
 ---
 
@@ -95,10 +95,10 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 > **Production URL:** [e-holidaysvillas.com](http://e-holidaysvillas.com) &nbsp;|&nbsp; **API:** [api.e-holidaysvillas.com](https://api.e-holidaysvillas.com) &nbsp;|&nbsp; **Repo:** [E-Holidaysvillas](https://github.com/imtiaz-ahamed-hridoy/E-Holidaysvillas)  
 > *Direct-to-consumer luxury vacation rental booking platform with dynamic seasonal rate calculation.*
 
-- **Architecture & Booking Engine:** Architected layered MVC backend featuring dedicated pricing calculation services, location search services, and transactional booking workflows across property models.
-- **Legacy Database Migration:** Developed a transactional ETL import engine streaming and converting legacy MySQL dump files into normalized schemas across properties, rates, and amenities with zero data loss.
-- **Checkout Security & Webhooks:** Implemented Stripe payment processing with cryptographic webhook signature validation, PDO parameter binding to prevent SQL injection, and atomic database reservation locking.
-- **Availability Search Optimization:** Tuned date-range availability lookups and seasonal rate matrices using composite database indexes and Redis query caching, achieving **under 180ms p95 API response latency** and **35ms query latency**.
+- **Booking Engine & Dynamic Pricing:** Architected the vacation rental booking platform featuring real-time property availability calendars, custom seasonal rate calculation matrices, Google Maps geocoding with interactive map search, and Stripe payment processing across 35 migrations.
+- **Legacy SQL ETL Migration:** Engineered a transactional ETL import engine that sanitized, transformed, and migrated 193,000+ lines of legacy VRS7 SQL databases into normalized relational schemas with zero data loss.
+- **High-Performance Availability Queries:** Optimized calendar lookup and availability queries with composite indexes and Redis caching, achieving **35ms database query latency** and **under 180ms p95 API response times** during date-range searches.
+- **Production Deployment:** Configured production environment on cPanel server with automated database backup routines, Nginx reverse proxy configuration, and transactional email deliverability.
 
 ---
 
@@ -170,9 +170,9 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 
 ## 🎓 Education & Certifications
 
-- **B.Sc. in Computer Science & Engineering (ongoing) - CSE -** Bangladesh University of Business & Technology (BUBT), Dhaka (2023 - 2027)
-- **Diploma in Computer Science & Technology - CSE - (CGPA: 3.75 / 4.00)** - Dinajpur Institute of Science & Technology (2019 - 2023)
-- **Secondary School Certificate (SSC) - Science - (GPA: 4.50 / 5.00)** - Lions School and College, Saidpur (2018 - 2019)
+- **Bachelor of Science in Computer Science & Engineering (ongoing) - CSE** - Bangladesh University of Business & Technology (BUBT), Dhaka (2023 - 2027)
+- **Diploma in Computer Science & Technology - CSE - CGPA: 3.75 / 4.00** - Dinajpur Institute of Science & Technology, Dinajpur, Bangladesh (2019 - 2023)
+- **Secondary School Certificate (SSC) - Science - GPA: 4.50 / 5.00** - Lions School and College, Saidpur, Bangladesh (2018 - 2019)
 - **Certifications:** ISP Setup Using MikroTik & Cisco Certified Network Associate (CCNA) - ICC Teleservices Ltd (2025) & Web Development Using Laravel - Career Source BD (2023)
 
 ---
