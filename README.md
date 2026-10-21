@@ -47,7 +47,7 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 
 ## 🚀 Featured Live Production Platforms
 
-### 1. [ThingsToDoLists](https://thingstodolists.com) — Online Travel Agency Experiences Marketplace
+### 1. [ThingsToDoLists](https://thingstodolists.com) - Online Travel Agency Experiences Marketplace
 > **Production URL:** [thingstodolists.com](https://thingstodolists.com) &nbsp;|&nbsp; **Admin:** [admin.thingstodolists.com](https://admin.thingstodolists.com) &nbsp;|&nbsp; **Repo:** [ThingsToDoLists](https://github.com/imtiaz-ahamed-hridoy/ThingsToDoLists)  
 > *High-scale OTA aggregating multi-supplier catalogs with real-time booking & multi-currency checkout.*
 
@@ -58,7 +58,7 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 
 ---
 
-### 2. [NumoniX](https://api.numonix.app) — Music Learning SaaS Backend API
+### 2. [NumoniX](https://api.numonix.app) - Music Learning SaaS Backend API
 > **API URL:** [api.numonix.app](https://api.numonix.app) &nbsp;|&nbsp; **Android APK:** [Google Drive Download](https://drive.google.com/file/d/1QqA6ZF0Zi7BSBUHNeUvGhx5DbUezrtpR/view) &nbsp;|&nbsp; **Repo:** [Numonix-Backend](https://github.com/imtiaz-ahamed-hridoy/Numonix-Backend)  
 > *Cross-platform music education SaaS with subscription billing and automated curriculum delivery.*
 
@@ -69,7 +69,7 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 
 ---
 
-### 3. [Sinozia](https://sinozia.com) — Generative AI Video Character Swap Platform
+### 3. [Sinozia](https://sinozia.com) - Generative AI Video Character Swap Platform
 > **Production URL:** [sinozia.com](https://sinozia.com) &nbsp;|&nbsp; **Repo:** [Sinozia](https://github.com/imtiaz-ahamed-hridoy/Sinozia)  
 > *Generative AI platform transforming video characters with face swapping and cloned voiceovers.*
 
@@ -80,7 +80,7 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 
 ---
 
-### 4. [Lokaa](https://lokaa.uk) — On-Demand Service Marketplace
+### 4. [Lokaa](https://lokaa.uk) - On-Demand Service Marketplace
 > **Production URL:** [lokaa.uk](https://lokaa.uk) &nbsp;|&nbsp; **API:** [api.lokaa.uk](https://api.lokaa.uk) &nbsp;|&nbsp; **Repo:** [Lokaa](https://github.com/imtiaz-ahamed-hridoy/Lokaa)  
 > *Two-sided on-demand local services marketplace connecting UK service providers with consumers.*
 
@@ -91,7 +91,7 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 
 ---
 
-### 5. [E-Holidays Villas](http://e-holidaysvillas.com) — Holiday Villa Rental Booking Platform
+### 5. [E-Holidays Villas](http://e-holidaysvillas.com) - Holiday Villa Rental Booking Platform
 > **Production URL:** [e-holidaysvillas.com](http://e-holidaysvillas.com) &nbsp;|&nbsp; **API:** [api.e-holidaysvillas.com](https://api.e-holidaysvillas.com) &nbsp;|&nbsp; **Repo:** [E-Holidaysvillas](https://github.com/imtiaz-ahamed-hridoy/E-Holidaysvillas)  
 > *Direct-to-consumer luxury vacation rental booking platform with dynamic seasonal rate calculation.*
 
@@ -170,10 +170,10 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 
 ## 🎓 Education & Certifications
 
-- **B.Sc. in Computer Science & Engineering (ongoing)** — Bangladesh University of Business & Technology (BUBT), Dhaka (2023 – 2027)
-- **Diploma in Computer Science & Technology (CGPA: 3.75 / 4.00)** — Dinajpur Institute of Science & Technology (2019 – 2023)
-- **Secondary School Certificate (SSC) — Science (GPA: 4.50 / 5.00)** — Lions School and College, Saidpur (2018 – 2019)
-- **Certifications:** ISP Setup Using MikroTik & Cisco Certified Network Associate (CCNA) — ICC Teleservices Ltd (2025) & Web Development Using Laravel — Career Source BD (2023)
+- **B.Sc. in Computer Science & Engineering (ongoing)** - Bangladesh University of Business & Technology (BUBT), Dhaka (2023 – 2027)
+- **Diploma in Computer Science & Technology (CGPA: 3.75 / 4.00)** - Dinajpur Institute of Science & Technology (2019 – 2023)
+- **Secondary School Certificate (SSC) - Science (GPA: 4.50 / 5.00)** - Lions School and College, Saidpur (2018 – 2019)
+- **Certifications:** ISP Setup Using MikroTik & Cisco Certified Network Associate (CCNA) - ICC Teleservices Ltd (2025) & Web Development Using Laravel - Career Source BD (2023)
 
 ---
 
