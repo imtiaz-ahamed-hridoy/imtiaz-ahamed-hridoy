@@ -62,10 +62,10 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 > **API URL:** [api.numonix.app](https://api.numonix.app) &nbsp;|&nbsp; **Android APK:** [Google Drive Download](https://drive.google.com/file/d/1QqA6ZF0Zi7BSBUHNeUvGhx5DbUezrtpR/view) &nbsp;|&nbsp; **Repo:** [Numonix-Backend](https://github.com/imtiaz-ahamed-hridoy/Numonix-Backend)  
 > *Cross-platform music education SaaS with subscription billing and automated curriculum delivery.*
 
-- **SaaS API & Subscription Billing:** Built the full production backend REST API (84 endpoints) and administrative portal, integrating Paddle Billing v2 with Ed25519 cryptographic webhook validation across a three-tiered recurring subscription architecture.
-- **Automated Lifecycle & Monetization:** Engineered the automated Founder Programme engine managing 30-day trial clocks, scheduled day-25 expiry notifications, promotional conversion offers, and automated cron subscription state transitions.
-- **Testing & Quality Assurance:** Implemented a comprehensive automated test suite (unit, feature, and integration tests) maintaining a **100% pass rate** across authentication, subscription billing, and webhook idempotency to prevent regressions.
-- **Performance & Media Streaming:** Optimized curriculum audio streaming endpoints to achieve **under 180ms p95 API response latency** and **35ms database query latency**; integrated mobile payment workflows with the cross-platform Flutter client (AI-assisted development).
+- **Architecture & Service Layer:** Architected the REST API using dedicated Service classes, Repository interfaces with container bindings, Form Requests, and API Resources to decouple domain logic from controllers under SOLID principles.
+- **Curriculum Engine & Security:** Built a dual-state learning engine for guest devices via cryptographic HMAC-SHA256 fingerprinting and registered students via Sanctum, enforcing role-based policies and mass-assignment protection.
+- **Paddle Billing & Webhooks:** Integrated Paddle Billing v2 recurring subscriptions with Ed25519 webhook signature verification, database transactions, and cron workers for automated trial tracking and subscription renewals.
+- **Streaming Performance & Mobile:** Tuned audio curriculum streaming endpoints with eager loading, composite indexes, and Redis caching to achieve **under 180ms p95 API response latency** and **35ms query latency**; integrated with Flutter mobile client.
 
 ---
 
