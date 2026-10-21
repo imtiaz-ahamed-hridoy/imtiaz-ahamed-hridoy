@@ -170,9 +170,9 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 
 ## 🎓 Education & Certifications
 
-- **Bachelor of Science in Computer Science & Engineering (ongoing) - CSE** - Bangladesh University of Business & Technology (BUBT), Dhaka (2023 - 2027)
-- **Diploma in Computer Science & Technology - CSE - CGPA: 3.75 / 4.00** - Dinajpur Institute of Science & Technology, Dinajpur, Bangladesh (2019 - 2023)
-- **Secondary School Certificate (SSC) - Science - GPA: 4.50 / 5.00** - Lions School and College, Saidpur, Bangladesh (2018 - 2019)
+- **Bachelor of Science in Computer Science & Engineering (ongoing) - CSE -** - Bangladesh University of Business & Technology (BUBT), Dhaka (2023 - 2027)
+- **Diploma in Computer Science & Technology - CSE - (CGPA: 3.75 / 4.00)** - Dinajpur Institute of Science & Technology, Dinajpur, Bangladesh (2019 - 2023)
+- **Secondary School Certificate (SSC) - Science - (GPA: 4.50 / 5.00)** - Lions School and College, Saidpur, Bangladesh (2018 - 2019)
 - **Certifications:** ISP Setup Using MikroTik & Cisco Certified Network Associate (CCNA) - ICC Teleservices Ltd (2025) & Web Development Using Laravel - Career Source BD (2023)
 
 ---
