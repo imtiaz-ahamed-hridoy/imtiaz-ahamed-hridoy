@@ -159,20 +159,20 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 
 ## 💼 Work History
 
-- **Executive, Laravel | Softvence IT Ltd** *(Dec 2025 – Sep 2026 | Dhaka, BD)*
+- **Executive, Laravel | Softvence IT Ltd** *(Dec 2025 - Sep 2026 | Dhaka, BD)*
   - Architected backends for 5 live production platforms, achieved 35ms database query latency and under 180ms p95 API response times, built memory-safe batch sync pipelines (<45MB RAM), and implemented idempotent payment processing with automated CI/CD.
-- **Customer Service Officer | Genex Infosys (Grameenphone)** *(Aug 2024 – Apr 2025 | Dhaka, BD)*
+- **Customer Service Officer | Genex Infosys (Grameenphone)** *(Aug 2024 - Apr 2025 | Dhaka, BD)*
   - Handled technical customer support, issue resolution via CRM tools, client documentation, and back-office reporting.
-- **Technical Assistant | Edison Group** *(Jan 2023 – Jul 2024 | Dhaka, BD)*
+- **Technical Assistant | Edison Group** *(Jan 2023 - Jul 2024 | Dhaka, BD)*
   - Hardware maintenance, QA testing, assembly-line worker coordination, technical documentation, and network troubleshooting.
 
 ---
 
 ## 🎓 Education & Certifications
 
-- **B.Sc. in Computer Science & Engineering (ongoing)** - Bangladesh University of Business & Technology (BUBT), Dhaka (2023 – 2027)
-- **Diploma in Computer Science & Technology (CGPA: 3.75 / 4.00)** - Dinajpur Institute of Science & Technology (2019 – 2023)
-- **Secondary School Certificate (SSC) - Science (GPA: 4.50 / 5.00)** - Lions School and College, Saidpur (2018 – 2019)
+- **B.Sc. in Computer Science & Engineering (ongoing)** - Bangladesh University of Business & Technology (BUBT), Dhaka (2023 - 2027)
+- **Diploma in Computer Science & Technology (CGPA: 3.75 / 4.00)** - Dinajpur Institute of Science & Technology (2019 - 2023)
+- **Secondary School Certificate (SSC) - Science (GPA: 4.50 / 5.00)** - Lions School and College, Saidpur (2018 - 2019)
 - **Certifications:** ISP Setup Using MikroTik & Cisco Certified Network Associate (CCNA) - ICC Teleservices Ltd (2025) & Web Development Using Laravel - Career Source BD (2023)
 
 ---
