@@ -48,57 +48,57 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 ## 🚀 Featured Live Production Platforms
 
 ### 1. [ThingsToDoLists](https://thingstodolists.com) - Online Travel Agency Experiences Marketplace
-> **Production URL:** [thingstodolists.com](https://thingstodolists.com) &nbsp;|&nbsp; **Admin:** [admin.thingstodolists.com](https://admin.thingstodolists.com) &nbsp;|&nbsp; **Repo:** [ThingsToDoLists](https://github.com/imtiaz-ahamed-hridoy/ThingsToDoLists)  
-> *High-scale OTA aggregating multi-supplier catalogs with real-time booking & multi-currency checkout.*
+> **Production URL:** [thingstodolists.com](https://thingstodolists.com) &nbsp;|&nbsp; **Admin:** [admin.thingstodolists.com](https://admin.thingstodolists.com) &nbsp;|&nbsp; **Repo:** [ThingsToDoLists](https://github.com/imtiaz-ahamed-hridoy/ThingsToDoLists.git)  
+> *High-scale OTA aggregating multi-supplier catalogs with real-time booking and multi-currency checkout*
 
-- **Catalog Aggregation & Architecture:** Architected the complete travel marketplace backend in Laravel 12, normalizing external supplier catalogs (GlobalTix Asian ticketing, Bókun TripAdvisor global tours) across 55 database models and 148 API endpoints managing 1,000+ live attractions.
-- **Database & Latency Optimization:** Solved database full-table scan bottlenecks through Redis caching, composite indexing, and eager loading, reducing database roundtrips by 98% (201 to 3 queries) and achieving **35ms database query latency** and **under 180ms p95 API response latency**.
-- **Memory-Safe Queue Pipelines:** Engineered asynchronous background catalog synchronization using chunked queue jobs on an isolated Supervisor worker pool with distributed concurrency locks on DigitalOcean VPS, maintaining flat RAM consumption under 45MB.
-- **Financial Checkout & Security:** Engineered multi-currency checkout with automated daily exchange rate synchronization and dual-provider payments (Stripe, PayPal), enforcing cryptographic HMAC webhook validation and pessimistic database transactions to eliminate duplicate bookings.
+- **Catalog Architecture & Data Ingestion:** Built the unified travel catalog backend in Laravel 12 to normalize external supplier feeds from GlobalTix (Asian ticketing) and Bókun (TripAdvisor global tours) across 55 database models and 148 API endpoints, managing 1,000+ live attractions and tours.
+- **Database Indexing & Latency Optimization:** Eliminated full-table scans by adding composite indexes, eager loading relationships, and implementing Redis caching. Cut database queries by 98% (from 201 down to 3 per request), delivering 35ms database query latency and under 180ms p95 API response times on production search traffic.
+- **Background Queue Processing:** Designed memory-safe catalog synchronization using chunked background queue workers and concurrency locking on DigitalOcean VPS, reducing memory usage from 500MB+ to under 45MB flat across external product records.
+- **Payment Integration & Checkout Security:** Built multi-currency checkout with automated daily exchange rate updates and dual payment gateways (Stripe, PayPal). Enforced cryptographic webhook signature verification and database transactions to prevent race conditions and duplicate bookings.
 
 ---
 
 ### 2. [NumoniX](https://api.numonix.app) - Music Learning SaaS Backend API
-> **API URL:** [api.numonix.app](https://api.numonix.app) &nbsp;|&nbsp; **Android APK:** [Google Drive Download](https://drive.google.com/file/d/1QqA6ZF0Zi7BSBUHNeUvGhx5DbUezrtpR/view) &nbsp;|&nbsp; **Repo:** [Numonix-Backend](https://github.com/imtiaz-ahamed-hridoy/Numonix-Backend)  
-> *Cross-platform music education SaaS with subscription billing and automated curriculum delivery.*
+> **API URL:** [api.numonix.app](https://api.numonix.app) &nbsp;|&nbsp; **Android APK:** [Google Drive Download](https://drive.google.com/file/d/1QqA6ZF0Zi7BSBUHNeUvGhx5DbUezrtpR/view) &nbsp;|&nbsp; **Repo:** [Numonix-Backend](https://github.com/imtiaz-ahamed-hridoy/Numonix-Backend.git)  
+> *Cross-platform music education SaaS with subscription billing and automated curriculum delivery*
 
 - **Architecture & Service Layer:** Architected the REST API using dedicated Service classes, Repository interfaces with container bindings, Form Requests, and API Resources to decouple domain logic from controllers under SOLID principles.
 - **Curriculum Engine & Security:** Built a dual-state learning engine for guest devices via cryptographic HMAC-SHA256 fingerprinting and registered students via Sanctum, enforcing role-based policies and mass-assignment protection.
 - **Paddle Billing & Webhooks:** Integrated Paddle Billing v2 recurring subscriptions with Ed25519 webhook signature verification, database transactions, and cron workers for automated trial tracking and subscription renewals.
-- **Streaming Performance & Mobile:** Tuned audio curriculum streaming endpoints with eager loading, composite indexes, and Redis caching to achieve **under 180ms p95 API response latency** and **35ms query latency**; integrated with Flutter mobile client.
+- **Streaming Performance & Mobile:** Tuned audio curriculum streaming endpoints with eager loading, composite indexes, and Redis caching to achieve under 180ms p95 API response latency and 35ms query latency; integrated with Flutter app.
 
 ---
 
 ### 3. [Sinozia](https://sinozia.com) - Generative AI Video Character Swap Platform
-> **Production URL:** [sinozia.com](https://sinozia.com) &nbsp;|&nbsp; **Repo:** [Sinozia](https://github.com/imtiaz-ahamed-hridoy/Sinozia)  
-> *Generative AI platform transforming video characters with face swapping and cloned voiceovers.*
+> **Production URL:** [sinozia.com](https://sinozia.com) &nbsp;|&nbsp; **Repo:** [Sinozia](https://github.com/imtiaz-ahamed-hridoy/Sinozia.git)  
+> *Generative AI platform transforming video characters with face swapping and cloned voiceovers*
 
-- **7-Stage Pipeline Orchestration:** Architected the end-to-end video processing platform orchestrating a 7-stage automated queue pipeline: FFmpeg video frame extraction $\rightarrow$ LLM prompt synthesis $\rightarrow$ preview generation $\rightarrow$ Kling AI video rendering $\rightarrow$ ElevenLabs voice cloning $\rightarrow$ automated video assembly.
-- **Multi-Provider AI Abstraction:** Designed an enterprise AI vision abstraction layer using Strategy and Factory design patterns, enabling zero-code runtime provider switching between OpenAI GPT-4o, Google Gemini 2.5 Flash, and Anthropic Claude Sonnet via central configuration.
-- **Concurrency & Resource Management:** Engineered a user credit and billing management system utilizing atomic database transaction locking to eliminate balance race conditions, accompanied by asynchronous status polling workers with scheduler auto-recovery on Hostinger VPS.
-- **API Performance & Reliability:** Optimized API endpoints to maintain **under 180ms p95 response latency** and **35ms query execution times** during concurrent video generation task creation and media asset indexing.
+- **Automated Pipeline Orchestration:** Architected a 7-stage asynchronous queue pipeline connecting video frame extraction, prompt generation, preview rendering, Kling AI video rendering, ElevenLabs voice cloning, and final video composition into a cohesive user workflow.
+- **Multi-Provider AI Abstraction:** Built a flexible vision provider layer using Strategy and Factory design patterns, allowing the system to switch between OpenAI GPT-4o, Google Gemini, and Anthropic Claude through configuration without code changes.
+- **User Balance & Queue Management:** Built the credit billing system using database transactions and concurrency control to prevent balance race conditions during concurrent generations, backed by automated polling workers on Hostinger VPS.
+- **API Performance & Reliability:** Optimized job status polling and asset creation endpoints to maintain under 180ms p95 response times and 35ms query latency under concurrent video processing workloads.
 
 ---
 
-### 4. [Lokaa](https://lokaa.uk) - On-Demand Service Marketplace
-> **Production URL:** [lokaa.uk](https://lokaa.uk) &nbsp;|&nbsp; **API:** [api.lokaa.uk](https://api.lokaa.uk) &nbsp;|&nbsp; **Repo:** [Lokaa](https://github.com/imtiaz-ahamed-hridoy/Lokaa)  
-> *Two-sided on-demand local services marketplace connecting UK service providers with consumers.*
+### 4. [Lokaa](https://lokaa.uk) - Service Marketplace Platform
+> **Production URL:** [lokaa.uk](https://lokaa.uk) &nbsp;|&nbsp; **API:** [api.lokaa.uk](https://api.lokaa.uk) &nbsp;|&nbsp; **Repo:** [Lokaa](https://github.com/imtiaz-ahamed-hridoy/Lokaa.git)  
+> *Two-sided on-demand local services marketplace connecting UK service providers with consumers*
 
-- **Rapid 0-to-1 Architecture:** Designed and built the entire two-sided service marketplace from scratch in two weeks across 66 API routes (137 route definitions), featuring geolocation provider search, dynamic service listings, CMS, and OTP authentication.
-- **Real-Time Communication:** Implemented bidirectional real-time messaging and notifications between clients and service providers using Laravel Reverb WebSockets and Firebase Cloud Messaging (FCM).
-- **Database Indexing & Query Latency:** Optimized provider search and category filtering with composite indexing and query caching, achieving **35ms database query latency** and **sub-180ms p95 response times** across all marketplace endpoints.
-- **Production DevOps:** Configured and deployed the production infrastructure on Hostinger VPS (CloudPanel) with Nginx SSL, static asset caching, Supervisor background queue workers, and automated deployment scripts.
+- **Platform Architecture & Rapid Delivery:** Designed and launched the full two-sided marketplace from scratch in two weeks across 66 API routes (137 route definitions), covering geolocation search, provider profiles, booking requests, and email OTP verification.
+- **Real-Time Messaging:** Implemented bidirectional real-time chat and push notifications between customers and service providers using Laravel Reverb WebSockets and Firebase Cloud Messaging.
+- **Search & Database Tuning:** Optimized marketplace category filtering and location-based provider queries with composite indexing and Redis caching, achieving 35ms database query latency and under 180ms p95 API response times.
+- **Production Deployment:** Configured production VPS infrastructure on Hostinger (CloudPanel) with Nginx, SSL certificates, Supervisor queue workers, and automated deployment scripts.
 
 ---
 
 ### 5. [E-Holidays Villas](http://e-holidaysvillas.com) - Holiday Villa Rental Booking Platform
-> **Production URL:** [e-holidaysvillas.com](http://e-holidaysvillas.com) &nbsp;|&nbsp; **API:** [api.e-holidaysvillas.com](https://api.e-holidaysvillas.com) &nbsp;|&nbsp; **Repo:** [E-Holidaysvillas](https://github.com/imtiaz-ahamed-hridoy/E-Holidaysvillas)  
-> *Direct-to-consumer luxury vacation rental booking platform with dynamic seasonal rate calculation.*
+> **Production URL:** [e-holidaysvillas.com](http://e-holidaysvillas.com) &nbsp;|&nbsp; **API:** [api.e-holidaysvillas.com](https://api.e-holidaysvillas.com) &nbsp;|&nbsp; **Repo:** [E-Holidaysvillas](https://github.com/imtiaz-ahamed-hridoy/E-Holidaysvillas.git)  
+> *Direct-to-consumer luxury vacation rental booking platform with dynamic seasonal rate calculation*
 
-- **Booking Engine & Dynamic Pricing:** Architected the vacation rental booking platform featuring real-time property availability calendars, custom seasonal rate calculation matrices, Google Maps geocoding with interactive map search, and Stripe payment processing across 35 migrations.
-- **Legacy SQL ETL Migration:** Engineered a transactional ETL import engine that sanitized, transformed, and migrated 193,000+ lines of legacy VRS7 SQL databases into normalized relational schemas with zero data loss.
-- **High-Performance Availability Queries:** Optimized calendar lookup and availability queries with composite indexes and Redis caching, achieving **35ms database query latency** and **under 180ms p95 API response times** during date-range searches.
-- **Production Deployment:** Configured production environment on cPanel server with automated database backup routines, Nginx reverse proxy configuration, and transactional email deliverability.
+- **Booking Engine & Dynamic Rates:** Built the vacation rental booking platform with real-time property availability calendars, custom seasonal rate calculation matrices, Google Maps location search, and Stripe payment processing across 35 migrations.
+- **Legacy Database Migration:** Developed a data import pipeline that cleaned, normalized, and imported 193,000+ lines of legacy VRS7 SQL databases into a modern relational schema with zero data loss.
+- **Availability Search Optimization:** Tuned date-range availability and pricing queries using database indexes and Redis caching, achieving 35ms database query latency and under 180ms p95 API response latency.
+- **Production Environment:** Configured and maintained the cPanel hosting environment, setting up automated database backups, transactional email deliverability, and Nginx reverse proxy rules.
 
 ---
 
