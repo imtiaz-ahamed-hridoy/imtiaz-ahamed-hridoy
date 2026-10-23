@@ -96,10 +96,14 @@ Production-tested **Laravel Backend Developer** with experience engineering and 
 > **Production URL:** [lokaa.uk](https://lokaa.uk) &nbsp;|&nbsp; **API:** [api.lokaa.uk](https://api.lokaa.uk) &nbsp;|&nbsp; **Repo:** [Lokaa](https://github.com/imtiaz-ahamed-hridoy/Lokaa.git)  
 > *Two-sided on-demand local services marketplace connecting UK service providers with consumers*
 
-- **Platform Architecture & Rapid Delivery:** Designed and launched the full two-sided marketplace from scratch in two weeks across 66 API routes (137 route definitions), covering geolocation search, provider profiles, booking requests, and email OTP verification.
-- **Real-Time Messaging:** Implemented bidirectional real-time chat and push notifications between customers and service providers using Laravel Reverb WebSockets and Firebase Cloud Messaging.
-- **Search & Database Tuning:** Optimized marketplace category filtering and location-based provider queries with composite indexing and Redis caching, achieving 35ms database query latency and under 180ms p95 API response times.
-- **Production Deployment:** Configured production VPS infrastructure on Hostinger (CloudPanel) with Nginx, SSL certificates, Supervisor queue workers, and automated deployment scripts.
+- **Architecture & Design:** Architected layered API-first backend using repository patterns for chat, dedicated search services, and form requests isolating validation rules.
+- **Features & Functionality:** Built customer onboarding, geolocation search, booking requests, reviews, bidirectional messaging, and admin tools for category moderation and provider verification.
+- **Technical Complexity:** Engineered search combining MySQL full-text matching with location filters, driving real-time messaging using private broadcast authorization channels for message isolation.
+- **Security:** Implemented Laravel Sanctum token auth, private channel authorization guards, role policies, database transactions for bookings, and strict validation blocking mass assignment.
+- **Performance & Scalability:** Optimized marketplace listing queries by selecting explicit columns, eager loading relations, and applying composite indexes, achieving API response time under 180ms and database query time under 35ms.
+- **Reliability & Quality:** Established structured error responses returning deterministic HTTP status codes, backed by transactional database operations and background queues processing notifications.
+- **Integrations:** Integrated Firebase Cloud Messaging for mobile push delivery, Laravel Reverb WebSockets for instant chat broadcasting, and email services for transactional verification codes.
+- **DevOps & Deployment:** Automated production deployment on CloudPanel VPS using GitHub Actions, configuring Nginx reverse proxy rules, SSL certificates, and background queue workers.
 
 ---
 
